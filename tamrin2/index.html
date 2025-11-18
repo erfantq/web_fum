@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>جدول دانشجویان</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>لیست دانشجویان</h1>
+        
+        <div class="slideshow-container">
+            <div>
+                <div class="slideshow" id="slideshow">
+                    <!-- اسلایدها با جاوااسکریپت اضافه خواهند شد -->
+                </div>
+                <div class="slideshow-controls">
+                    <button class="slideshow-btn" id="prevBtn">عکس قبلی</button>
+                    <button class="slideshow-btn" id="nextBtn">عکس بعدی</button>
+                </div>
+            </div>
+        </div>
+        
+        <table id="studentsTable">
+            <thead>
+                <tr>
+                    <th>نام</th>
+                    <th>نام خانوادگی</th>
+                    <th>شماره دانشجویی</th>
+                    <th>تعداد واحد</th>
+                    <th>رشته</th>
+                    <th>عملیات</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- ردیف‌های دانشجویان با جاوااسکریپت اضافه خواهند شد -->
+            </tbody>
+        </table>
+    </div>
+    
+    <!-- مدال نمایش عکس دانشجو -->
+    <div class="modal" id="imageModal">
+        <div class="modal-content">
+            <button class="close-btn" id="closeModal">&times;</button>
+            <img class="modal-img" id="modalImage" src="" alt="عکس دانشجو">
+            <div class="student-name" id="modalStudentName"></div>
+        </div>
+    </div>
+    
+    <!-- مدال تایید حذف -->
+    <div class="confirmation-modal" id="confirmationModal">
+        <div class="confirmation-content">
+            <h3>تأیید حذف</h3>
+            <p>آیا از حذف این دانشجو مطمئن هستید؟</p>
+            <div class="confirmation-buttons">
+                <button class="confirm-btn yes-btn" id="confirmDelete">بله</button>
+                <button class="confirm-btn no-btn" id="cancelDelete">خیر</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
